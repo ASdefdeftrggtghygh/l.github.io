@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INFINITY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- صفحة البداية -->
+  <div class="intro-page" id="intro-page">
+    <div class="intro-content">
+      <h1 class="title">INFINITY</h1>
+      <div class="moving-line"></div>
+    </div>
+  </div>
+
+  <!-- الصفحة الرئيسية -->
+  <div class="main-page" style="display:none;">
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="https://media.discordapp.net/attachments/1309070345352773664/1309632863414648842/Infinity_Logo_Png.PNG?ex=67424a26&is=6740f8a6&hm=4cef9b851f0ed3bdeb772986e692ec4a546a83261837103321d40dbd5fe5f421&=&format=webp&quality=lossless&width=1216&height=663" alt="INFINITY Logo" style="height: 40px;">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" onclick="showSection('home')">Home</a></li>
+        <li><a href="#bio" onclick="showSection('bio')">Bio</a></li>
+        <li><a href="#products" onclick="showSection('products')">Products</a></li>
+      </ul>
+    </nav>
+
+    <!-- قسم الصفحة الرئيسية -->
+    <section id="home" class="section active">
+      <div class="content">
+        <h1 class="animated-text">Welcome to INFINITY</h1>
+        <p class="animated-text">" Your one-stop shop for premium products and excellent service. Discover a wide range of high-quality items designed to meet your needs. Shop now and enjoy unbeatable prices, fast shipping, and customer satisfaction guaranteed. Thank you for choosing INFINITY!"
+        </p>
+      </div>
+    </section>
+
+    <!-- قسم التعريف -->
+    <section id="bio" class="section">
+      <div class="content">
+        <h2 class="animated-text">About Us</h2>
+        <p class="animated-text">
+          أهلاً وسهلاً بك في سيرفرنا، مكانك هنا لو كنت تبحث عن احترافية وابتكار في البرمجة. نحن نقدم حلول تكنولوجية مبتكرة وعالية الجودة لمساعدتك في تحقيق أهدافك بكل احترافية.
+        </p>
+        <p class="animated-text">
+          Welcome to our server, your place is here if you're looking for professionalism and innovation in programming. We offer innovative, high-quality tech solutions to help you achieve your goals with expertise.
+        </p>
+      </div>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section id="products" class="section">
+      <h2 class="animated-text">Our Products</h2>
+      <div class="product-grid">
+        <!-- منتج 1 -->
+        <div class="product-card" onclick="viewProduct('Character', '-', 'https://media.discordapp.net/attachments/1308462904571334777/1309668335687962694/IMG_1929.png?ex=67426b2f&is=674119af&hm=4ea62787ea3ab36fe39133c660faf831962b66532e589ad9544061d0c99a0dd2&=&format=webp&quality=lossless&width=538&height=525','أهلاً لدينا بوت لحقين الحياة الواقعية ومن أبرز مميزاته: • خاصية تحديد الكركتر: يمكنك اختيار الكركتر المطلوب لكل شخص، بحيث يكون لكل كركتر تقديم خاص به. • لوق القبول والرفض: يتضمن النظام لوق (سجل) خاصاً لقرارات القبول والرفض. • حفظ بيانات المقبولين: في حال قبول الشخص، تُسجل بياناته تلقائيًا في الخانة التي قدم عليها. • عرض البيانات بعد القبول: عندما يتم قبول الشخص، ويضغط على الخانة الخاصة به، تظهر له جميع البيانات التي قام بتسجيلها مسبقاً. وأضافة على ذلك يمكنك إضافة 7 إضافات في البوت الذي سيقدم إليك، وإذا أردت أكثر من 7 إضافات يتم تزويد المبلغ بنسبة 3%')">
+          <img src="https://media.discordapp.net/attachments/1309070345352773664/1309635257372377098/9690098E-9999-4A95-B565-EF47973B29E4.jpg?ex=67424c61&is=6740fae1&hm=4b56b8f3d1e0d103c3778c292e3d9e020041d0e8b9434d524f18e32ad16550a5&=&format=webp&width=1216&height=663" alt="Product 1">
+          <h3>Character</h3>
+          <p>-</p>
+        </div>
+        <!-- منتج 2 -->
+        <div class="product-card" onclick="viewProduct('🌐〡𝖶ebsite-service', '-', 'https://media.discordapp.net/attachments/1237421136770498771/1307974979689906288/Ahmeds_Portfolio_-_1_-_Microsoft_Edge_08_05_46_03_09_17_.png?ex=674230e0&is=6740df60&hm=60a09493a16103ac1acc19cba6ce575a1690a30c7ca4813eb348817907390f6a&=&format=webp&quality=lossless&width=1339&height=663', 'موقع خاص في سيرفرك أو خاص فيك أنت كستريمر أو يوتيوبر، وأيضاً يمكننا إنشاء الخيارات التي تختارها..')">
+          <img src="https://media.discordapp.net/attachments/1309070345352773664/1309633998640648243/8F61D914-6DA6-472B-A47B-EF8C30B19764.jpg?ex=67424b35&is=6740f9b5&hm=8d3eb6759de70dc3faca2f1eeff5f5c1ed7dd4178ba6ab4dd73b9ba1e259820b&=&format=webp&width=1216&height=663" alt="Product 2">
+          <h3>🌐〡𝖶ebsite-service</h3>
+          <p>-</p>
+        </div>
+        <!-- منتج 3 -->
+        <div class="product-card" onclick="viewProduct('Custom Code', '-', 'https://media.discordapp.net/attachments/1309070345352773664/1309635257372377098/9690098E-9999-4A95-B565-EF47973B29E4.jpg?ex=67424c61&is=6740fae1&hm=4b56b8f3d1e0d103c3778c292e3d9e020041d0e8b9434d524f18e32ad16550a5&=&format=webp&width=1216&height=663', 'متوفر لدينا بناء كود من الصفر من فكرتك الخاصة وتصميمك الخاص. ملاحظة مهمة: لن يتم نشر الكود الذي تم إنشاؤه لك، سيكون خاصاً بك فقط....')">
+          <img src="https://media.discordapp.net/attachments/1309070345352773664/1309635257372377098/9690098E-9999-4A95-B565-EF47973B29E4.jpg?ex=67424c61&is=6740fae1&hm=4b56b8f3d1e0d103c3778c292e3d9e020041d0e8b9434d524f18e32ad16550a5&=&format=webp&width=1216&height=663" alt="Product 3">
+          <h3>Custom Code</h3>
+          <p>-</p>
+        </div>
+        <!-- منتج 4 -->
+        <div class="product-card" onclick="viewProduct('Servers-𝗌ervice ', '-', https://media.discordapp.net/attachments/1309070345352773664/1309635257372377098/9690098E-9999-4A95-B565-EF47973B29E4.jpg?ex=67424c61&is=6740fae1&hm=4b56b8f3d1e0d103c3778c292e3d9e020041d0e8b9434d524f18e32ad16550a5&=&format=webp&width=1216&height=663', 'متوفر لدينا بناء شاتات ورتب وبوتات معروفة وموثقة، وإعداد صلاحيات ومميزات مخصصة لكل رتبة، وتطوير أنظمة الأمان وتنظيم الأدوار والمهام، وضبط إعدادات السيرفرات، وتقديم دعم فني مستمر')">
+          <img src="https://media.discordapp.net/attachments/1309070345352773664/1309635257372377098/9690098E-9999-4A95-B565-EF47973B29E4.jpg?ex=67424c61&is=6740fae1&hm=4b56b8f3d1e0d103c3778c292e3d9e020041d0e8b9434d524f18e32ad16550a5&=&format=webp&width=1216&height=663" alt="Product 4">
+          <h3>Servers-𝗌ervice</h3>
+          <p>-</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // تأخير الانتقال إلى الصفحة الرئيسية
+    setTimeout(() => {
+      document.getElementById('intro-page').style.display = 'none'; // إخفاء صفحة البداية
+      document.querySelector('.main-page').style.display = 'block'; // عرض الصفحة الرئيسية
+    }, 3000); // التأخير 3 ثوانٍ
+
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(sectionId).classList.add('active');
+    }
+
+    function viewProduct(name, price, image, details) {
+      const queryString = `details.html?name=${encodeURIComponent(name)}&price=${encodeURIComponent(price)}&image=${encodeURIComponent(image)}&details=${encodeURIComponent(details)}`;
+      window.location.href = queryString;
+    }
+  </script>
+</body>
+</html>
